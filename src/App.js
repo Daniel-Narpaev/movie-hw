@@ -36,6 +36,7 @@ const movies = [
 function App() {
   const [movie, setMovie] = useState(movies);
   const [showModal, setShowModal] = useState(false);
+  // const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   const showModalHandler = () => {
     setShowModal((prev) => !prev);

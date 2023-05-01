@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+// import styled from "styled-components";
 const Button = ({ text, onClick }) => {
   const className = () => {
     if (text === "ADD") {
@@ -8,9 +9,12 @@ const Button = ({ text, onClick }) => {
       return "Editbtn";
     } else if (text === "Delete") {
       return "Deletebtn";
-    } else if (text === "Cancel") {
+    } else if (text === "Cancel" || text === "No") {
       return "btnWhite";
-    } else {
+    } else if (text === "Yes" ) {
+      return "btnBlue";
+    }
+    else{
       return "btnBlue";
     }
   };
@@ -22,3 +26,4 @@ const Button = ({ text, onClick }) => {
 };
 
 export default Button;
+
